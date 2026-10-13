@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+	<products>
+		<product code="101-01">
+			<category>Laptops</category>
+			<productName>Dell inspirion 15</productName>
+			<description>15.6 inch laptop with 16GB RAM and 512 SSD</description>
+			<quantity>10</quantity>
+			<price type="EURO"> 699.99</price>
+		</product>
+	
+		<product code="101-02">
+			<category>Laptops</category>
+			<productName>HP Pavilion 14</productName>
+			<description>14 inch laptop with Intel Core i5 processor</description>
+			<quantity>20</quantity>
+			<price type="EURO">649.99</price>
+		</product>
+		
+		<product code="102-01">
+			<category>Monitors</category>
+			<productName>Samsung 24 inch Monitor</productName>
+			<description>Full HD LED monitor with HDMI connections</description>
+			<quantity>12</quantity>
+			<price type="EURO">149.99</price>
+		</product>
+		
+		<product code="102-02">
+			<category>Monitors</category>
+			<productName>LG 27 inch monitor</productName>
+			<description>27 inch IPS monitor with 75 Hz refresh rate</description>
+			<quantity>11</quantity>
+			<price type="EURO"> 199.00</price>
+		</product>
+		
+		<product code="103-01">
+			<category>Keyboards</category>
+			<productName>Logitech K120</productName>
+			<description>Wired USB keyboard with the standard layout</description>
+			<quantity>21</quantity>
+			<price type="EURO">20.00</price>
+		</product>
+		
+		<product code="104-01">
+			<category>Mouse</category>
+			<productName>Logitech M185</productName>
+			<description>Wireless mouse</description>
+			<quantity>32</quantity>
+			<price type="EURO">14.99</price>
+		</product>
+		
+		<product code="104-02">
+			<category>Mouse</category>
+			<productName>Razer DeathAdder V2</productName>
+			<description>Gaming Mouse</description>
+			<quantity>26</quantity>
+			<price type="EURO">12.25</price>
+		</product>
+		
+		<product code="104-03">
+			<category>Mouse</category>
+			<productName>Razer Basilisk V3 pro</productName>
+			<description>Bluetooth, wired USB-C</description>
+			<quantity> 6</quantity>
+			<price type="EURO"> 179.99</price>
+		</product>
+		
+		<product code="105-01">
+			<category>Headphones</category>
+			<productName> Sony WH-CH520</productName>
+			<description>Wireless Bluetooth headphones</description>
+			<quantity>0</quantity>
+			<price type="EURO"> 33.10</price>
+		</product>
+		
+		<product code="105-02">
+			<category>Storage</category>
+			<productName>SandDisk Extreme 1TB </productName>
+			<description>Portable SSD with USB-C connectivity</description>
+			<quantity>2</quantity>
+			<price type="EURO">110.05</price>
+		</product>
+	</products>
+</store>
