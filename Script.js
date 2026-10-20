@@ -23,13 +23,13 @@
 
      // shows all products if search bar is empty
 		if (query === ""){
-			for(let i = 0; i < rows.length;i++){
-        rows[i].style.display = "";
-      }
+			searchErr.textContent = ("Please enter a valid code!!! eg: 101-01");
       return;
-		}
+      }
+     
+		
 		 if(!pattern.test(query)){
-			searchErr.textContent = "This is invalis search code, please try again";
+			searchErr.textContent = "This is invalid search code, please try again";
       return;
 		}
     let found = false;
@@ -55,8 +55,6 @@
 		
 	});
 	   
-           
-
            
 	async function loadData(url) {
   const table = document.querySelector("#tab1 tbody");
@@ -86,6 +84,7 @@
 	
    
     for (let i = 0; i < products.length; i++) {
+      // declaring constants/varibale and assigning them to xml equivalent values
 		const code = products[i].getElementsByTagName("code")[0].textContent.trim();
       const category   = products[i].getElementsByTagName("category")[0].textContent.trim();
       const productName  = products[i].getElementsByTagName("productName")[0].textContent.trim();
@@ -94,7 +93,12 @@
       
       const price  = products[i].getElementsByTagName("price")[0].textContent.trim();
 
-      addRow(table, [code, category, productName, description, quantity,"€" + price], "td");
+     const row =  addRow(table, [code, category, productName, description, quantity,"€" + price], "td");
+
+      // this line checks if product is out of stock
+      if(Number(quantity) === 0){
+        row.classList.add("out-of-stock");
+      }
     }
   } catch (error) {
    console.error("Error loading xml", error);
@@ -120,6 +124,7 @@ function addRow(table, values, cellType) {
   }
 
   table.appendChild(row);
+  return row;
 }
 	
 

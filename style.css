@@ -1,3 +1,106 @@
 body{
-	background-color:blue;
+	background-color:f3f6fa;
+	font-family:sans-serif;
+	color:#24344a;
+}
+/* changes the color of navbar */
+.navbar.bg-dark{
+	background-color:#14283f !important;
+}
+/* styling of navbar color,font */
+.navbar-brand{
+	color:white;
+	font-weight:bold;
+	font-size:24px;
+}
+/* hoover effect*/
+.navbar.brand:hover{
+	color:#16813b;
+}
+/* color for links */
+.navbar .nav-link{
+	color:#dce6f2;
+}
+/* hover effect for links */
+.navbar .nav-link:hover{
+	color:#1681eb;
+}
+/* button styling done herr and hover effects done in next line */
+.btn-outline-success{
+	color:#1681eb;
+	border-color:#1681eb;
+}
+.btn-outline-success:hover{
+	background-color:#1681eb;
+	border-color:#1681eb;
+	color:white;
+}
+
+/* table styling done here */
+#tab1{
+	width:100%;
+	margin-top:30px;
+	margin-bottom:30px;
+	border-collapse:collapse;
+	border: 2px solida black;
+	background-color:lightblue;
+	box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* table header */
+#tab1 thead th{
+	background-color:#235aa0;
+	color:white;
+	padding:20px;
+	text-align:left;
+}
+/* this is for table cells design*/
+#tab1 tbody td{
+	padding:15px;
+	vertical-align:middle;
+	border-bottom: 1px solid #dce3eb;
+}
+
+/* Adds lines between products */
+#tab1 tbody tr{
+	border-bottom:1px solid black;
+	
+}
+
+/* this does hooovering effects */
+#tab1 tbody tr:hover td{
+	background-color:#e6f0fa;
+}
+#tab1 tbody tr:nth-child(even) td{
+	background-color:#f5f9ff;
+}
+
+/* this one does styling of price column */
+#tab1 td:last-child{
+	font-weight:bold;
+	color:black;
+}
+/* now goes styling for products thata re out of stock */
+#tab1 tbody tr.out-of-stock td{
+	background-color:white;
+	color:red;
+}
+/* and this line is to keep red colour while hovering over it*/
+#tab1 tbody tr.out-of-stock:hover td{
+	background-color:white;
+}
+/* table contaner */
+.table-responsive{
+	border-radius:10px;
+	overflow:auto;
+	box-shadow:0 4px 12px rgba(126, 14, 14, 0.08);
+
+}
+
+/* styling for spams */
+#err{
+	color:white;
+}
+#valid{
+	color:white;
 }
