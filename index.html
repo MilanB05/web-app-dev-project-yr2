@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="EN ">
 <head>
 <meta type="author" author="Milan Bukvic">
 <title>Milan Supplies</title>
@@ -31,14 +31,35 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <form class="d-flex flex-column" id="srch1">
+	  <div class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="101-01" aria-label="Search" id="srch2">
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+		</div>
+		
+     
+	  <span id="err"></span>
+	  <span id="tick"></span>
+	   </form> 
     </div>
   </div>
 </nav>
 
+<div class="container mt-5"> 
+<table id="tab1">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Category</th>
+				<th>Product Name</th>
+				<th>Description</th>
+				<th>Quantity</th>
+				<th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="productBody"></tbody>
+    </table>
+	</div>
 <script src="Script.js"></script>
 </body>
 </html>
