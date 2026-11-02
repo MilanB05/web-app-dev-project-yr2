@@ -37,9 +37,27 @@
     </div>
   </div>
 </nav>
+<!-- main content of the page-->
+<Main>
+  <!--this is form for entering the city name-->
+  <form id="WeatherF">
+
+    <label for="City"> Please Enter a city:</label>
+
+    <!--for user to input city-->
+    <input type="text" id="city" placeholder="Dublin" required>
+
+    <button type="Submit">Get Weather</button>
+
+    <!-- displays loading messages or errors-->
+    <p id="weatherMsg" role="status"></p>
+
+    <!--Weather info will appear here-->
+    <div id="WResult"></div>
+  </form>
+</Main>
 
 
-
-<script src="Script.js"></script>
+<script src="WScript.js"></script>
 </body>
 </html>
