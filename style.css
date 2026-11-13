@@ -1,4 +1,4 @@
-body{
+#indexB {
 	background-color:f3f6fa;
 	font-family:sans-serif;
 	color:#24344a;
@@ -103,4 +103,99 @@ body{
 }
 #valid{
 	color:white;
+}
+
+/* here goes styling for weaher app */
+
+#WeatherB {
+	margin: 0;
+	font-family:Arial, sans-serif;
+	
+
+}
+
+/* this is styling for main content area */
+#WeatherB main{
+	display:flex;
+	justify-content: center;
+	align-items:flex-start;
+	padding: 70px 20px;
+
+}
+/* styling for the form */
+#WeatherF{
+	background-image:url("images/sky.webp");
+	padding:35px;
+	border-radius:15px;
+	width: 50%;
+	text-align:center;
+	box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* here goes styling for city label */
+#WeatherF label{
+	display:block;
+	font-size:20px;
+	font-weight:bold;
+	color:black;
+	margin-bottom: 20px;
+
+}
+/* here goes styling for city input box */
+
+#WeatherF input{
+	width:100%;
+	padding: 12px;
+	border:1px solid white;
+	border-radius:10px;
+	font-size: 16px;
+	margin-bottom:20px;
+}
+
+/* giving effects to input box when clicked */
+
+#WeatherF input:focus{
+	outline:none;
+	border-color:#0984e3; 
+	box-shadow: 0 0 5px rgba(9,132,227,0.4);
+}
+
+/* giving styling to a Get Weather Button */
+#WeatherF button{
+	background-color:#0984e3;
+	color:white;
+	border:none;
+	padding: 12px 25px;
+	border-radius:10px;
+	font-size:16px;
+	cursor:pointer;
+
+}
+
+/* this will give the hover effect to the button */
+#WeatherF button:hover{
+	background-color: #0069b4;
+}
+
+/* this gives a separation for weather result section */
+#WResult{
+	margin-top:25px;
+}
+
+/* styling for city nam ein result section */
+#WResult h3{
+	color:#0984e3;
+	font-size:24px;
+	margin-bottom: 20px;
+}
+
+/* styling for individual weather information parts */
+#WResult p {
+	background-color:#eef6ff;
+	padding:12px;
+	border-radius: 8px;
+	border-width:50%;
+	margin-bottom: 10px;
+
+
 }
