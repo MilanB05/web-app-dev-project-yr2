@@ -35,7 +35,50 @@
 	border-color:#1681eb;
 	color:white;
 }
+/* here is styling for both serach buttons in weather app page */
+#srch1 button{
+	padding: 6px 12px;
+	font-size:14px;
+	border-radius:6px;
+	width:auto;
+}
+/* now this is specificaly for "Search" button */
+#srch1 button[type="submit"]{
+	background-color: #1681eb;
+	border: 1px solid #1681eb;
+	color:white;
+}
 
+/* hover affect for seacrh button */
+#srch1 button[type="submit"]:hover{
+	background-color:#0965bc;
+}
+/*here goes Show all btn */
+
+#ShowAll{
+	background-color:transparent;
+	border: 1px solid white;
+	color:white;
+
+}
+/* this give hover effect for show all btn*/
+
+#ShowAll:hover{
+	background-color: white;
+	color:#14282f;
+}
+
+/* keeps the search input btn and btns together */
+#srch1 .d-flex{
+	align-items:center;
+	gap:5px;
+}
+
+/* keeps inout at normal size */
+#srch2{
+	width: 150px;
+	min-width:0;
+}
 /* table styling done here */
 #tab1{
 	width:100%;

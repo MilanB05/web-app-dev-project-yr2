@@ -63,16 +63,19 @@ form.addEventListener("submit", async function(event) {
     temperature.textContent = 
     `Temperature: ${weather.temp_c}\u00B0C` // \u00B0C is to dispaly that circle before C in degrees celsius
     
-
+    // create p tag to display temperature
     const condition  = document.createElement("p")
     condition.textContent = `Condition: ${weather.condition.text}`
 
+    // creates p tag to display humidity
     const humidity = document.createElement("p")
     humidity.textContent = `Humidity: ${weather.humidity}%`
 
+    // creates p tag to display  wind speed
     const wind = document.createElement("p")
     wind.textContent = ` Wind: ${weather.wind_kph}km/h`
 
+    // cerates p tag to dispaly "feeels like"
     const feelsLike = document.createElement("p")
     feelsLike.textContent = `Feels like: ${weather.feelslike_c}\u00B0C`
 
